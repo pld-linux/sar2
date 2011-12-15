@@ -1,0 +1,11 @@
+--- src/SConscript.orig	2011-07-01 02:28:23.000000000 +0200
++++ src/SConscript	2011-12-15 14:28:23.000000000 +0100
+@@ -13,7 +13,7 @@
+                            '-Wno-write-strings', '-DHAVE_LIBXPM'])
+ 
+ env.Append(LIBS = ['m', 'SDL', 'SM', 'ICE',
+-'X11','Xext','Xmu', 'Xpm', 'GL', 'GLU', 'pthread', 'alut', 'vorbisfile'])
++'X11','Xext','Xmu', 'Xpm', 'GL', 'GLU', 'pthread', 'alut', 'vorbisfile', 'openal'])
+ 
+ 
+ sources = Split("""
